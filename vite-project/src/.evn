@@ -1,0 +1,8 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyAPFf_XvP0IwT9xD8gpL_Lq6X6f-H_p008",
+  authDomain: "new-daily-report-78ae7.firebaseapp.com",
+  projectId: "new-daily-report-78ae7",
+  storageBucket: "new-daily-report-78ae7.firebasestorage.app",
+  messagingSenderId: "376776677826",
+  appId: "1:376776677826:web:da35e7a543502ea530de5b"
+};

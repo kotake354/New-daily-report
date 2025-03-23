@@ -5,9 +5,9 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirrame, 'index.html'),
-                history: resolve(__dirrame, 'history.html'),
+                main: resolve(__dirname, 'index.html'),
+                history: resolve(__dirname, 'history.html'),
             },
         },
     },
-});
+})

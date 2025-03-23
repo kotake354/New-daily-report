@@ -1,8 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
-import { fetchHistoryData } from "./my-modules/fetch-history-data";
-import { submitData } from "./my-modules/submit-data";
+import { fetchHistoryData } from "./my-modules/fetch-history-data.js";
+import { submitData } from "./my-modules/submit-data.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //Coloud Firestoreから習得したデータを表示する
-const fetchHistoryDate = async () => {
+const fetchHistoryData = async () => {
 let tags = "";
 
 //reportsコレクションのデータを取得
@@ -43,9 +43,9 @@ if(document.getElementById("js-history")) {
 }
 
 //Cloud Firestoreにデータを送信する
-const subumitDate = async (e) => {
+const submitData = async (e) => {
     e.preventDefault();
-    const formDate = new FormDtae(e.target);
+    const formDate = new FormData(e.target);
 
     try {
         const docRef = await addDoc(collection(db,"reports"),{
